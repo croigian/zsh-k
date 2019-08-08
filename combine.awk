@@ -36,7 +36,7 @@ BEGIN {
   type = $3
   runnable = substr($4, 4, 1)
   name_color = 256 # White
-       if (type     == "directory"    ) { name_color = bold( 27) } # Dark blue
+       if (type     == "directory"    ) { name_color = bold( 33) } # Dark blue
   else if (type     == "symbolic link") { name_color = bold( 92) } # Purple
   else if (type     == "fifo"         ) { name_color = bold(226) } # Yellow
   else if (type     == "socket"       ) { name_color = bold(118) } # Green
